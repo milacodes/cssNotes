@@ -1,0 +1,71 @@
+body{
+  background-color: lavender;
+}
+
+.twoP{
+  color: darkgreen;
+}
+
+/* selects any child elemt under parent */
+/* see how ALL lis under the ul are bold */
+/* even the li that is a direct child of the ol */
+ul li{
+  font-weight: bold;
+}
+
+/* carrot selects ONLY direct children of parent element */
+/* see how the ol's direct children are left alone */
+ul > li {
+  color: steelblue;
+}
+
+/* every p tag that comes DIRECTLY after an img tag */
+img + p{
+  font-style: italic;
+}
+
+/* every li directly follows a ol, BUT has to have the same parent (ul in this case)*/
+ol ~ li {
+  color: magenta;
+}
+
+/* ***********Attribute selectors*********** */
+
+/* selects all img with src attribute that STARTS with this value */
+img[src^="https://www.serious"]{
+  width: 500px;
+}
+
+/* selects all img with src attribute that ENDS with this value */
+img[src$="jpg"]{
+  border-radius: 20px;
+}
+
+/* selects all img with src attribute that CONTAINS this value ANYWHERE*/
+img[src*="seriouseats.com"]{
+  border: 2px dashed red;
+}
+
+p[class~=last]{
+  background-color: lightslategray;
+}
+
+
+/* ***********Gradients*********** */
+.paragraph-holder{
+  /* gradient to the right */
+  /* background: linear-gradient(to right, purple, steelblue); */
+
+  /* gradient to the left */
+  /* background: linear-gradient(to left, purple, steelblue); */
+
+  /* gradient to the left, with fade to transparency 0 */
+  background: linear-gradient(to left, rgb(229,46,111), rgba(229,46,111, 0));
+
+  /* gradient to the top */
+  /* background: linear-gradient(to top, purple, steelblue); */
+
+  /* gradient to the bottom right */
+  /* background: linear-gradient(to bottom right, purple, steelblue); */
+
+}

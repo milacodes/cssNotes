@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mila testing css</title>
+  </head>
+  <body>
+      <h1>Mila's CSS Emporium</h1>
+      <p>With flannel and pumpkins popping up all over the place and the holidays fast approaching, it's officially mashed potato season. Mashed potatoes are classic comfort food, and the kind of simple side dish that everyone should know how to make. But that's not to say perfecting them is easy, and there are plenty of fine details that can spell the difference between mashed potato success and failure. If you do have concerns when making mashed potatoes, we hope that this little guide will help answer questions and help you out in your time of need.</p>
+
+      <h2>Just figured out how to auto fill the html tags</h2>
+
+      <img src="https://www.seriouseats.com/images/2017/11/20150207-food-lab-mashed-potatoes-creamed-spinach-1-thumb-1500xauto-426185.jpg" alt="bowl o mashed taters">
+
+      <p class="oneP">For fluffy mashed potatoes, we recommend using high-starch, low-moisture potatoes like russets. Mashed taters are made by crushing cooked potatoes into fine particles, and then coating those particles in fat and water (usually in the form of butter and milk or cream). Fluffy, light mashed potatoes are achieved by minimizing the amount of starch that gets incorporated into this mixture, and the more you work to break down potatoes, the more starch they release.</p>
+
+      <p class="twoP">Therefore, you want to use potatoes that readily break down with minimal effort. It may seem counterintuitive to use a high-starch potato for a preparation where starch is the enemy, but due to their mealy composition, russet potatoes fall apart easily, and the starch they do release can be easily rinsed off before mixing the potatoes with dairy.</p>
+
+      <p class="threeP last">Russets also absorb that dairy more readily than waxy potatoes, which again means less manipulation is required to form the finished product, for a lighter, fluffier mash.</p>
+
+      <div class="paragraph-holder">
+        <span>Fluffiness isn't the only acceptable texture for mashed potatoes, and when you're in the mood for a more rich and creamy product, like French-style pommes purées, then a different type of spud is required. This indulgent, silky smooth potato purée, popularized by French chef Joël Robuchon, famously has a 2:1 potato-to-butter ratio by weight. With such a high proportion of fat, this is a far less stable emulsion that requires the binding properties of potato starch to keep the butter from separating out.</span>
+        <p>Waxy potatoes, like Yukon golds, are the best option for this style, because they require more work to break down and release more gelated starch in the process. Once cooked, you can pass the potatoes through a food mill or ricer, and then whip them together with melted butter and heavy cream, either by hand or in a stand mixer. For a super-smooth final product, you can then pass the mixture through a fine-mesh strainer.</p>
+      </div>
+
+      <ul>
+        <li>peel</li>
+        <li>cut</li>
+        <li>boil</li>
+        <ol>
+          <li>drain</li>
+          <li>mash</li>
+        </ol>
+        <li>season</li>
+        <li>eat</li>
+        <ol>
+            <li>mila</li>
+            <li>was here</li>
+        </ol>
+        <li>One more for funsies</li>
+      </ul>
+
+      <img src="https://www.seriouseats.com/images/2014/11/20141113-make-ahead-mashed-potatoes-vicky-wasik-1-1500x1125.jpg" alt="tater chunks">
+
+      <table>
+        <tr>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
+        </tr>
+        <tr>
+          <td>Alfreds Futterkiste</td>
+          <td>Maria Anders</td>
+          <td>Germany</td>
+        </tr>
+        <tr>
+          <td>Centro comercial Moctezuma</td>
+          <td>Francisco Chang</td>
+          <td>Mexico</td>
+        </tr>
+      </table>
+      <br>
+      <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+        <label>Name
+          <input type="text" name="customer_name" required>
+        </label>
+
+        <label>Phone
+          <input type="tel" name="phone_number">
+        </label>
+
+        <label>Email
+          <input type="email" name="email_address">
+        </label>
+
+        <br>
+        <fieldset>
+          <legend>Which taxi do you require?</legend>
+          <label> <input type="radio" name="taxi" required value="car"> Car </label>
+          <label> <input type="radio" name="taxi" required value="van"> Van </label>
+          <label> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Extras</legend>
+          <label> <input type="checkbox" name="extras" value="baby"> Baby Seat </label>
+          <label> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label>
+          <label> <input type="checkbox" name="extras" value="tip"> Stock Tip </label>
+        </fieldset>
+
+        <label>Pickup Date/Time
+          <input type="datetime-local" name="pickup_time" required>
+        </label>
+        <br>
+        <label>Pickup Place
+          <select id="pickup_place" name="pickup_place">
+            <option value="" selected="selected">Select One</option>
+            <option value="office" >Taxi Office</option>
+            <option value="town_hall" >Town Hall</option>
+            <option value="telepathy" >We'll Guess!</option>
+          </select>
+        </label>
+        <br>
+        <label>Dropoff Place
+          <input type="text" name="dropoff_place" required list="destinations">
+        </label>
+        <br>
+        <datalist id="destinations">
+          <option value="Airport">
+          <option value="Beach">
+          <option value="Fred Flinstone's House">
+        </datalist>
+        <br>
+        <label>Special Instructions
+          <textarea name="comments" maxlength="500"></textarea>
+        </label>
+        <br>
+        <button>Submit Booking</button>
+        </form>
+  </body>
+</html>
